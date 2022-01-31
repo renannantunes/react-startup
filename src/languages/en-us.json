@@ -1,0 +1,8 @@
+{
+  "home": {
+    "title": "Welcome to the homepage!",
+    "text": "To access the \"Protected Page\", login is required. The \"About Page\" is public and does not require a login to be accessed.",
+    "buttonProtectedPage": "Protected Page",
+    "buttonAboutPage": "About"
+  }
+}

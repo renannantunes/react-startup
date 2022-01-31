@@ -1,0 +1,8 @@
+{
+  "home": {
+    "title": "Bem-vindo a página inicial!",
+    "text": "Para acessar a Página Protegida você precisa fazer login. A página \"Sobre\" é pública e pode ser acessada sem fazer login.",
+    "buttonProtectedPage": "Página Protegida",
+    "buttonAboutPage": "Sobre"
+  }
+}
