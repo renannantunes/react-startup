@@ -1,0 +1,18 @@
+.flag-selector {
+  position: absolute;
+  right: 0;
+  padding: 1.875rem;
+
+  div:hover {
+    cursor: pointer;
+  }
+
+  .fade {
+    position: absolute;
+    transform: translateY(0.5rem);
+
+    .not-selected-flag {
+      margin-bottom: 0.5rem;
+    }
+  }
+}

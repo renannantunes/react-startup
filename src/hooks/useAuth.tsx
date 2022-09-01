@@ -7,9 +7,13 @@ interface IAuthContext {
   signOut: (callback: VoidFunction) => void;
 }
 
+interface IAuthProvider {
+  children: React.ReactElement;
+}
+
 const AuthContext = createContext<IAuthContext>({} as IAuthContext);
 
-const AuthProvider: React.FC = ({ children }) => {
+const AuthProvider: React.FC<IAuthProvider> = ({ children }) => {
   const [user, setUser] = useState<any>(null);
 
   const signIn = async (loginData: string, callback: VoidFunction) => {

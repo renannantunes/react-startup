@@ -10,21 +10,19 @@ import { LoginPage } from '../pages/Authentication/Login';
 export const RootRoutes: React.FC = () => (
   <AuthProvider>
     <Routes>
-      <Route>
-        {/* Public Pages */}
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/login" element={<LoginPage />} />
-        {/* Protected Pages */}
-        <Route
-          path="/protected"
-          element={
-            <RequireAuth>
-              <Private element={<Dashboard />} />
-            </RequireAuth>
-          }
-        />
-      </Route>
+      {/* Public Pages */}
+      <Route path="/" element={<Home />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/login" element={<LoginPage />} />
+      {/* Protected Pages */}
+      <Route
+        path="/protected"
+        element={
+          <RequireAuth>
+            <Private element={<Dashboard />} />
+          </RequireAuth>
+        }
+      />
     </Routes>
   </AuthProvider>
 );
